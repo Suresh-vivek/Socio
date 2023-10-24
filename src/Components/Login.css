@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+.outer-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  height: 800px;
+  width: 1200px;
+
+  box-shadow: 10px 20px 30px rgba(00, 00, 00, 0.26);
+}
+.inner-rights {
+  height: 800px;
+  width: 800px;
+  display: flex;
+
+  flex-direction: column;
+  background-color: white;
+}
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #1a1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 200px;
+  width: 800px;
+}
+
+.Login-form {
+  display: flex;
+  flex-direction: column;
+
+  height: 600px;
+  width: 800px;
+  margin-left: 50px;
+}
+.lform {
+  display: flex;
+  flex-direction: column;
+}
+
+.Labels {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #1a1919;
+  margin-top: 20px;
+}
+
+.form-fields {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 500px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #1a1919;
+  border: 2px solid #1a1919;
+  border-radius: 8px;
+}
+
+.form-fields:focus {
+  outline: none;
+  border: 3px solid #2a484e;
+}
+
+.register-button {
+  position: absolute;
+  top: 400px;
+  left: 40px;
+}

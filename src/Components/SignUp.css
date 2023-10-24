@@ -1,0 +1,76 @@
+.outer-signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  height: 800px;
+  width: 1200px;
+
+  box-shadow: 10px 20px 30px rgba(00, 00, 00, 0.26);
+}
+
+.register-button {
+  position: absolute;
+  top: 400px;
+  left: 40px;
+}
+
+.inner-right-signup {
+  height: 800px;
+  width: 800px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.heading-signup {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #1a1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  width: 800px;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+
+  height: 600px;
+  width: 800px;
+  margin-left: 50px;
+}
+
+.sform {
+  display: flex;
+  flex-direction: column;
+}
+
+.Label-signup {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #1a1919;
+  margin-top: 10px;
+}
+
+.form-field-signup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 450px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #1a1919;
+  border: 2px solid #1a1919;
+  border-radius: 8px;
+}
+
+.form-field-signup:focus {
+  outline: none;
+  border: 3px solid #2a484e;
+}
