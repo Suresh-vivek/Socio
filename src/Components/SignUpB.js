@@ -1,5 +1,6 @@
 import "./SignUpB.css";
 import SignUp from "./SignUp";
+import { Link } from "react-router-dom";
 
 const SignUpB = () => {
   return (
@@ -11,7 +12,10 @@ const SignUpB = () => {
       </div>
 
       <div className="login-content">
-        <img src={require("../Assets/logo.png")} />
+        <Link to="/">
+          {" "}
+          <img src={require("../Assets/logo.png")} />
+        </Link>
       </div>
 
       <span className="login-para">Empowering the Next Generation</span>

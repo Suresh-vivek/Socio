@@ -10,22 +10,35 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post("http://localhost:3004/login", { email, password })
-      .then((result) => {
-        console.log(result);
-        // Clear the input fields
-        if (result.data === "Success") {
-          navigate("/ngohome");
-        } else {
-          alert("Invalid Credentials");
-        }
-        setEmail("");
-        setPassword("");
-      })
-      .catch((err) => console.log(err));
+    if (!email || !password) {
+      alert("Please enter both email and password.");
+    } else {
+      axios
+        .post("http://localhost:3004/login", { email, password })
+        .then((result) => {
+          console.log(result);
+          // Clear the input fields
+          if (result.data.message === "Success") {
+            localStorage.setItem("ngoname", result.data.ngoname);
+            localStorage.setItem("ngoid", result.data.ngoid);
+
+            navigate("/ngohome");
+          } else {
+            alert("Invalid Credentials");
+          }
+          setEmail("");
+          setPassword("");
+        })
+        .catch((err) => console.log(err));
+    }
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -61,7 +74,7 @@ const Login = () => {
 
             <div>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="Enter Password"
                 autoComplete="off"
                 name="password"
@@ -69,6 +82,14 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
               />
+
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="password-toggle-button"
+              >
+                {showPassword ? "Hide" : "Show"}
+              </button>
             </div>
 
             <div>

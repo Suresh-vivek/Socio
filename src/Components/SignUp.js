@@ -12,6 +12,7 @@ const SignUp = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [address, setAddress] = useState();
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -39,6 +40,9 @@ const SignUp = () => {
         })
         .catch((err) => console.log(err));
     }
+  };
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -115,7 +119,7 @@ const SignUp = () => {
 
             <div>
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="Enter Password"
                 autoComplete="off"
                 name="password"
@@ -123,6 +127,14 @@ const SignUp = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
               />
+
+              <button
+                type="button"
+                onClick={togglePasswordVisibility}
+                className="password-toggle-button"
+              >
+                {showPassword ? "Hide" : "Show"}
+              </button>
             </div>
 
             {/* NGO Address*/}

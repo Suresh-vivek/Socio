@@ -47,6 +47,20 @@ a {
   color: #ffff00;
   font-size: 20px;
 }
+
+.alinks {
+  text-decoration: none;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffff00;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+.alinks:hover{
+  color: #2a484e;
+  background-color: #ffff00;
+  border-radius: 10px;
+}
 .right-img {
   position: absolute;
   top: 80px;

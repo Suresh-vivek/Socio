@@ -9,6 +9,7 @@ import SignUp from "./Components/SignUp";
 import SignUpB from "./Components/SignUpB";
 import NgoHome from "./Components/NgoHome";
 import Donation from "./Components/Donation";
+import ContactUs from "./Components/ContactUs";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
         <Route path="/signup" element={<SignUpB />} />
         <Route path="/ngohome" element={<NgoHome />} />
         <Route path="/donation" element={<Donation />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>

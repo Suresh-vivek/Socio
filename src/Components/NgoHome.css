@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sansita+Swashed:wght@300;400;500&display=swap");
+
+.ngo-outer {
+  display: flex;
+  flex-direction: column;
+}
+.ngo-navbar {
+  height: 358px;
+  width: 100vw;
+}
+.ngo-button {
+  height: 50px;
+  width: 280px;
+  background-color: #212429;
+  position: absolute;
+  top: 220px;
+  left: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ngo-button-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+
+  color: white;
+}
+
+.ngo-content {
+  width: 100vw;
+
+  height: 1500px;
+  display: flex;
+  flex-direction: row;
+}
+.ngo-form {
+  width: 65vw;
+  height: 1500px;
+
+  display: flex;
+  flex-direction: column;
+}
+.ngo-form-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #2a484e;
+  margin-top: 40px;
+
+  padding-left: 80px;
+}
+.ngo-form-subheading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #2a484e;
+  margin-top: 20px;
+
+  padding-left: 80px;
+}
+.ngo-data {
+  width: 35vw;
+  height: 1500px;
+
+  box-shadow: -5px 5px 8px rgba(42, 72, 78, 0.9);
+}
+
+.ngoform {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.Form-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a484e;
+  margin-bottom: 10px;
+}
+.age-groups {
+  background-color: #2a484e;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: white;
+  height: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 600;
+ 
+}
+
+.form-field-signup1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #1a1919;
+  border: 2px solid #1a1919;
+  border-radius: 8px;
+}
+
+.form-field-signup:focus1 {
+  outline: none;
+  border: 3px solid #2a484e;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 5px; /* Add some spacing between checkboxes */
+  transform: scale(1.5);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+input:checked{
+  outline: 2px solid yellow;
+}
+
+label[for^="subject"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2a484e;
+  margin-right: 10px;
+}
+
+label[for="other"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2a484e;
+  margin-right: 10px;
+}
+label {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.custom-file-input {
+  /* Add your custom CSS styles for the file input here */
+  background-color: #f2f2f2;
+  border: 2px solid #2a484e;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 22px;
+  color: #2a484e;
+  width: 500px;
+  box-shadow: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 15px;
+  /* Customize the appearance as needed */
+  
+}
+
+.ngo-data-heading{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #2a484e;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.ngo-form-button{
+  text-decoration: none;
+  margin-top: 20px;
+  font-family: "Montserrat" , sans-serif;
+  font-size: 24px;
+  height: 50px;
+  width: 220px;
+  font-size: 700;
+  background-color: #0ac56e;
+  border-radius:10px ;
+
+}
+
+.ngo-form-location{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2a484e;
+
+}

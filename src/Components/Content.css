@@ -168,3 +168,10 @@ h1 {
   background-color: #2a484e;
 }
 
+.footer-links{
+  margin-left: 40px;
+
+}
+.footer-links:hover{
+ background-color: rgba(255, 255, 255, 0.4);
+}

@@ -74,3 +74,27 @@
   outline: none;
   border: 3px solid #2a484e;
 }
+
+.password-toggle-button{
+  background-color: #d4e6da;
+  margin-left: 20px;
+  height: 40px;
+  width: 80px;
+  border-radius: 8px;
+  border : 4px rgb(53,110,111) solid;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: -4px 4px 4px rgba(31,54,58,0.8);
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  transition: transform 0.2s ease;
+
+}
+
+.password-toggle-button:hover {
+  transform: scale(1.1); /* Scale up the button on hover for a bouncy effect */
+}
+
+.password-toggle-button:active {
+  transform: scale(0.9); /* Scale down the button when clicked for a click effect */
+}

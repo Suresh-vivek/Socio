@@ -86,7 +86,7 @@ const Content = () => {
           <img src={require("../Assets/app.png")} />
         </div>
 
-        <div className="app-content">
+        <div className="app-content" id="download">
           <div className="app-content-data">
             <span className="app-big">DOWNLOAD </span>
             <span className="app-small">OUR APP</span>
@@ -101,25 +101,26 @@ const Content = () => {
 
       <div className="footer-outer">
         <a
+          className="footer-links"
           href="https://www.linkedin.com/in/vivek-kumar-791302158/"
           target="_blank"
         >
           <img src={require("../Assets/linked.png")} alt="linkedin" />
         </a>
 
-        <a href="#">
+        <a href="https://twitter.com/OriginSoci59322" className="footer-links">
           <img src={require("../Assets/twitter.png")} alt="twitter" />
         </a>
 
-        <a href="#">
+        <a href="https://www.instagram.com/socio_origin?igshid=OGQ5ZDc2ODk2ZA%3D%3D" className="footer-links">
           <img src={require("../Assets/insta.png")} alt="insta" />
         </a>
 
-        <a href="#">
+        <a href="#" className="footer-links">
           <img src={require("../Assets/fb.png")} alt="facebook" />
         </a>
 
-        <a href="#">
+        <a href="#" className="footer-links">
           <img src={require("../Assets/mail.png")} alt="Email" />
         </a>
       </div>

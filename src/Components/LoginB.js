@@ -1,5 +1,6 @@
 import "./LoginB.css";
 import Login from "./Login";
+import { Link } from "react-router-dom";
 const LoginB = () => {
   return (
     <div className="outer-loginb">
@@ -11,7 +12,8 @@ const LoginB = () => {
       </div>
 
       <div className="login-content">
-        <img src={require("../Assets/logo.png")} />
+        <Link to="/"> <img src={require("../Assets/logo.png")} /></Link>
+        
       </div>
 
       <span className="login-para">Empowering the Next Generation</span>

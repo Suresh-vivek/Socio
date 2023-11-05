@@ -5,24 +5,30 @@ const Navbar = (props) => {
   return (
     <div className="outer-div">
       <div className="inner-left">
-        <img src={require("../Assets/logo.png")} alt="Logo" />
+        <Link to="/">
+          {" "}
+          <img src={require("../Assets/logo.png")} alt="Logo" />
+        </Link>
+
         <b>{props.text}</b>
       </div>
 
       <div className="inner-right">
         <div class="links">
-          <a href="#">
-            <b>Contact Us </b>
-          </a>
+          <Link to="/contactus">
+            <a className="alinks">
+              <b>Contact Us </b>
+            </a>
+          </Link>
 
           <Link to="/donation">
             {" "}
-            <a href="#">
+            <a href="#" className="alinks">
               <b>Donate</b>{" "}
             </a>
           </Link>
 
-          <a href="#">
+          <a href="#download" className="alinks">
             <b>Download</b>
           </a>
         </div>

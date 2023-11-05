@@ -1,8 +1,13 @@
 import "./Donation.css";
+import BackButton from "./BackButton";
 
 const Donation = () => {
   return (
     <div>
+      <div className="back-button">
+            <BackButton />
+          </div>
+          
       <div className="donate-bg"></div>
       <div className="donate-inner">
         <div className="donate-left-image">
